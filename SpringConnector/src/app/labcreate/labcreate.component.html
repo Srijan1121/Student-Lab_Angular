@@ -1,0 +1,38 @@
+<!-- <p>labcreate works!</p> -->
+<div id="form">
+<form >
+   
+    <div class="container-fluid">
+        <h1>Lab work</h1>
+        <form>
+        
+         <div class="form-group">
+                <label>Pc no.</label>
+                <input type="text" [(ngModel)]="model.pcNumber" name="pcNumber" class="form-control">
+                </div><br>
+        
+        <div class="form-group">
+                <label>Room no.</label>
+                <input type="text" [(ngModel)]="model.roomNumber" name="roomNumber" class="form-control">
+                </div><br>
+        
+        <div class="form-group">
+            <label>Assigned task</label>
+            <input type="text" [(ngModel)]="model.assignedTask" name="assignedTask" class="form-control">
+            </div><br>
+
+            <div class="form-group">
+                <label>Allotted Time</label>
+                <input type="text" [(ngModel)]="model.allottedTime" name="allottedTime" class="form-control">
+                </div><br>
+            
+
+
+        <button type="button"  (click)="postlab()" class="btn btn-primary">get created</button>
+        <button type="submit" (click)="welcomehome()" class="btn btn-primary">go to home</button>
+        </form>
+    </div>
+        <br>
+</form>
+
+</div>

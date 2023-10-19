@@ -1,0 +1,14 @@
+#form{
+    align-items: center;
+    color: aqua;
+    background-color: black;
+    padding-left: 45%;
+    padding-right: 25%;
+    padding-top: 12%;
+    padding-bottom: 15%;
+   font-style:italic;
+   
+}
+.enter{
+    font-size: large;
+}

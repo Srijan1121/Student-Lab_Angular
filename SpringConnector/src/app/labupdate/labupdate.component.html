@@ -1,0 +1,79 @@
+<!-- <p>labupdate works!</p> -->
+
+<form class="up">
+    <div>
+        <label>Id</label><br>
+    <input type="text" [(ngModel)]="model.id" name="id" required placeholder="Lab ID"><br><br>
+    </div>
+
+    <div>
+        <label>PC Number</label><br>
+    <input type="text" [(ngModel)]="model.pcNumber" name="pcNumber" required placeholder="PC Number"><br><br>
+    </div>
+
+
+    <div>
+        <label>Room Number</label><br>
+    <input type="text" [(ngModel)]="model.roomNumber" name="roomNumber" required placeholder="Room Number"><br><br>
+    </div>
+
+
+    <div>
+        <label>Assigned Task</label><br>
+    <input type="text" [(ngModel)]="model.assignedTask"  name="assignedTask" required placeholder="Assigned Task"><br><br>
+    </div>
+
+
+    <div>
+        <label>Alloted Time</label><br>
+    <input type="text" [(ngModel)]="model.allottedTime" name="allottedTime" required placeholder="Alloted Time"><br><br>
+   </div>
+
+
+   <div>
+    <button type="submit" (click)="modify()" class="btn btn-primary">Update Lab</button><br><br>
+    </div>
+
+
+    <div>
+    <button type="submit" (click)="welcomehome()" class="btn btn-primary">Go to Home</button>
+    </div>
+  </form>
+
+<!-- <form>
+   
+    <div class="container-fluid">
+        <h1>Lab work</h1>
+        <form>
+        
+         <div class="form-group">
+                <label>Pc no.</label>
+                <input type="text" class="form-control" [(ngModel)]="model.pcNumber" name="pcNumber" required >
+                </div><br>
+        
+        <div class="form-group">
+                <label>Room no.</label>
+                <input type="text" class="form-control" [(ngModel)]="model.roomNumber" name="roomNumber" required>
+                </div><br>
+        
+        <div class="form-group">
+            <label>Assigned task</label>
+            <input type="text" class="form-control" [(ngModel)]="model.assignedTask" name="assignedTask" required>
+            </div><br>
+
+            <div class="form-group">
+                <label>Alloted Time</label>
+                   <input type="text" class="form-control" [(ngModel)]="model.allottedTask" name="allottedTask" required>
+                    
+            </div>
+            <br>
+
+
+        <button type="button" (click)="modify()" class="btn btn-primary">get update</button>
+        </form>
+        </div>
+        <br>
+
+        <button type="submit" (click)="welcomehome()">go to home</button>
+</form>
+ -->

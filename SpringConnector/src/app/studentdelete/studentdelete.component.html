@@ -1,0 +1,54 @@
+
+<div id="form">
+<p>Enter id!</p>
+<input type="number" [(ngModel)]="id" placeholder="id"><br><br>
+<button type="submit" (click)="delete()" class="btn btn-primary">Delete</button><br>
+
+<button type="submit" (click)="welcomelab()" class="btn btn-info">go to lab</button><br>
+    <button type="submit" (click)="welcomehome()" class="btn btn-danger">go to home</button>
+</div>
+<!-- <form >
+
+<div class="container-fluid">
+    <h1>student works!</h1>
+    <form>
+    
+      <div class="form-group">
+            <label>Id</label>
+            <input type="text" class="form-control">
+            </div><br>
+    
+    <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control">
+            </div><br>
+    
+    <div class="form-group">
+        <label>Email</label>
+        <input type="text" class="form-control">
+        </div><br>
+    
+    <div class="form-group">
+            <label>Phone no.</label>
+            <input type="text" class="form-control">
+            </div>
+            <br> <br>
+    
+    <div class="form-group">
+        <select class="custom-select">
+            <option selected>Select Course</option>
+            <option *ngFor="let course of courses">{{course}}</option>
+        </select>       
+    </div>
+    <br> <br>  
+    
+    <button type="button" class="btn btn-primary">delete</button>
+    </form>
+    </div>
+    <br>
+    
+    
+    <button type="submit" (click)="welcomelab()">go to lab</button>
+    <button type="submit" (click)="welcomehome()">go to home</button>
+
+</form> -->

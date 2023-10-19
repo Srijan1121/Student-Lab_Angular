@@ -1,0 +1,68 @@
+
+
+/* <!-- Add a style section for CSS --> */
+
+  /* Style the container holding the JSON data */
+  p {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-family: Arial, sans-serif;
+    white-space: pre-wrap; /* Preserve line breaks and formatting */
+  }
+
+  /* Style the "Go to Home" button */
+  .btn-danger {
+    background-color: #1965e7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  /* Add hover effect for the button */
+  .btn-danger:hover {
+    background-color: #3d5ed9;
+  }
+
+
+
+
+
+  
+/* <!-- Add a style section for CSS --> */
+
+  /* Style the container holding the JSON data */
+  .data-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Style the JSON data */
+  pre {
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap;
+  }
+
+  /* Style the "Go to Home" button */
+  .btn-primary {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  /* Add a hover effect for the button */
+  .btn-primary:hover {
+    background-color: #2980b9;
+  }
+

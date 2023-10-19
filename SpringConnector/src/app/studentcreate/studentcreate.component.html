@@ -1,0 +1,151 @@
+<!-- <p>student-add works!</p> -->
+
+
+
+<!-- <form>
+    <input type="text" [(ngModel)]="model.name" name="name" required><br><br>
+    <input type="text" [(ngModel)]="model.email" name="email" required><br><br>
+    <input type="text" [(ngModel)]="model.phoneNumber" name="phoneNumber" required><br><br>
+    <input type="text" [(ngModel)]="model.course" name="course" required><br><br>
+    <button type="submit" (click)="post1()"  class="btn btn-primary">submit</button>
+    <button type="submit" (click)="welcomelab()">go to lab</button>
+    <button type="submit" (click)="welcomehome()">go to home</button>
+</form> -->
+
+
+<form id="form">
+
+<div class="container-fluid">
+    <h1>student works!</h1> <br>
+    <form>
+    
+     <div class="form-group">
+            <label>Name</label><br>
+            <input type="text" [(ngModel)]="model.name"  name="name"  placeholder="name" required>
+            </div><br>
+    
+    <div class="form-group">
+            <label>Email</label><br>
+            <input type="text" [(ngModel)]="model.email" name="email" placeholder="email" required>
+            </div><br>
+    
+    <div class="form-group">
+        <label>Phone no.</label><br>
+         <input type="text" [(ngModel)]="model.phoneNumber" name="phoneNumber" placeholder="phone number" required>
+        </div><br>
+    
+    <div class="form-group">
+            <label>Course</label><br>
+           <input type="text" [(ngModel)]="model.course" name="course" placeholder="course" required>
+            </div>
+            <br>
+
+     <button type="submit" (click)="post1()"  class="btn btn-primary">submit</button>
+    </form>
+    </div>
+    <br>
+    
+    
+  <button type="submit" (click)="welcomelab()" class="btn btn-primary">go to lab</button><br>
+    <button type="submit" (click)="welcomehome()" class="btn btn-danger">go to home</button>
+
+</form>
+
+
+
+<!-- <div class="container">
+    <h2>Add Student and Lab Details</h2>
+    <form (ngSubmit)="postStudentWithLabs()">
+      <div class="form-group">
+        <label for="name">Student Name:</label>
+        <input type="text" id="name" name="name" [(ngModel)]="studentModel.name" class="form-control" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="studentModel.email" class="form-control" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" [(ngModel)]="studentModel.phoneNumber" class="form-control" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="course">Course:</label>
+        <input type="text" id="course" name="course" [(ngModel)]="studentModel.course" class="form-control" required>
+      </div>
+  
+      <div class="form-group">
+        <h4>Lab Details</h4>
+        <div *ngFor="let lab of studentModel.labs; let i = index" class="lab-details">
+          <hr>
+          <label for="pcNumber">PC Number:</label>
+          <input type="text" id="pcNumber" name="pcNumber" [(ngModel)]="studentModel.labs[i].pcNumber" class="form-control" required>
+  
+          <label for="roomNumber">Room Number:</label>
+          <input type="text" id="roomNumber" name="roomNumber" [(ngModel)]="studentModel.labs[i].roomNumber" class="form-control" required>
+  
+          <label for="assignedTask">Assigned Task:</label>
+          <input type="text" id="assignedTask" name="assignedTask" [(ngModel)]="studentModel.labs[i].assignedTask" class="form-control" required>
+  
+          <label for="allottedTime">Allotted Time:</label>
+          <input type="text" id="allottedTime" name="allottedTime" [(ngModel)]="studentModel.labs[i].allottedTime" class="form-control" required>
+  
+          <button type="button" (click)="removeLab(i)" class="btn btn-danger">Remove Lab</button> 
+        </div>
+         <button type="button" (click)="addLab()" class="btn btn-primary">Add Lab</button> 
+      </div>
+  
+      <button type="submit" class="btn btn-primary">Add Student and Lab Details</button>
+    </form>
+  </div>
+-->
+  
+
+  <!-- <div class="container">
+  <h2>Add Student</h2>
+  <form (ngSubmit)="post1()" #studentForm="ngForm">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" [(ngModel)]="model.name" required />
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" [(ngModel)]="model.email" required />
+    </div>
+    <div class="form-group">
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="text" id="phoneNumber" name="phoneNumber" [(ngModel)]="model.phoneNumber" required />
+    </div>
+    <div class="form-group">
+      <label for="course">Course:</label>
+      <input type="text" id="course" name="course" [(ngModel)]="model.course" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Create Student</button>
+  </form>
+</div>
+
+<previous form fields for student details... -->
+
+<!-- <h3>Labs</h3>
+<div *ngFor="let lab of student.labs; let i = index">
+  <div class="form-group">
+    <label for="pcNumber">PC Number:</label>
+    <input type="text" id="pcNumber" name="pcNumber" [(ngModel)]="lab.pcNumber" required />
+  </div>
+  <div class="form-group">
+    <label for="roomNumber">Room Number:</label>
+    <input type="text" id="roomNumber" name="roomNumber" [(ngModel)]="lab.roomNumber" required />
+  </div>
+  <div class="form-group">
+    <label for="assignedTask">Assigned Task:</label>
+    <input type="text" id="assignedTask" name="assignedTask" [(ngModel)]="lab.assignedTask" required />
+  </div>
+  <div class="form-group">
+    <label for="allottedTime">Allotted Time:</label>
+    <input type="text" id="allottedTime" name="allottedTime" [(ngModel)]="lab.allottedTime" required />
+  </div> -->
+  <!-- <button type="button" (click)="removeLab(i)">Remove Lab</button> 
+</div> -->
+<!-- //<button type="button" (click)="addLab()">Add Lab</button> -->
